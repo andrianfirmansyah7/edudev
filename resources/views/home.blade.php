@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header style="padding: 3%; background-color: rgb(9, 48, 133); color: white;">
+      <header style="padding: 3%; background-color: rgb(9, 48, 133); color: white;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a id="navedu" class="navbar-brand" href="#"><b>EduDev</b></a>
@@ -22,10 +22,10 @@
                         <a class="nav-link" href="{{ route('home') }}">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('katalog') }}" target="_blank">Katalog</a>
+                        <a class="nav-link" href="{{ route('katalog') }}">Katalog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tentang') }}" target="_blank">Tentang Kami</a>
+                        <a class="nav-link" href="{{ route('tentang') }}">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn-success" aria-current="page" href="{{ route('login') }}">Masuk</a>

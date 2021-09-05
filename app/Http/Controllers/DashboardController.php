@@ -28,7 +28,7 @@ class DashboardController extends Controller
             'judul'=>$article->judul,
             'deskripsi'=>$article->deskripsi
         ]);
-        return redirect()->route('show');
+        return redirect()->route('admin');
     }
 
     public function detail($id)

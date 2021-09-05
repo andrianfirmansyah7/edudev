@@ -13,25 +13,25 @@
     <header style="padding: 3%; background-color: rgb(9, 48, 133); color: white;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a id="navedu" class="navbar-brand" href="index.html"><b>EduDev</b></a>
+                <a id="navedu" class="navbar-brand" href="#"><b>EduDev</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end nav-pills" id="navbarNavAltMarkup">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" target="_blank">Beranda</a>
+                        <a class="nav-link" href="{{ route('home') }}">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="katalog.html" target="_blank">Katalog</a>
+                        <a class="nav-link" href="{{ route('katalog') }}">Katalog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" target="_blank">Tentang Kami</a>
+                        <a class="nav-link" href="{{ route('tentang') }}">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-success" aria-current="page" href="login.html" target="_blank">Masuk</a>
+                        <a class="nav-link btn-success" aria-current="page" href="{{ route('login') }}">Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-outline-success" aria-current="page" href="register.html" target="_blank">Daftar</a>    
+                        <a class="nav-link btn-outline-success" aria-current="page" href="{{ route('register') }}">Daftar</a>    
                     </li>
                 </div>
             </div>
@@ -51,17 +51,41 @@
                         <div class="card-body">
                             <h4 class="text-center" style="color: rgb(9, 48, 133);"><b>Selamat Datang EduDevers!</b></h4>
                             <p class="mb-5 text-center" style="color: rgb(9, 48, 133);">Mari belajar bersama</p>
-                            <form>
+                            <form action="{{ route('login') }}" method="POST">
+                                @csrf
+                                @if(session('errors'))
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                Something it's wrong:
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                                </button>
+                                <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                                </ul>
+                                </div>
+                                @endif
+                                @if (Session::has('success'))
+                                <div class="alert alert-success">
+                                {{ Session::get('success') }}
+                                </div>
+                                @endif
+                                @if (Session::has('error'))
+                                <div class="alert alert-danger">
+                                {{ Session::get('error') }}
+                                </div>
+                                @endif
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label" style="color: rgb(9, 48, 133);">Alamat Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label" style="color: rgb(9, 48, 133);">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                  <input type="password" class="form-control" id="exampleInputPassword1"  name="password">
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 text-left">
+                                    <div class="col-6 text-left">   
                                         <div class="form-group form-check">
                                             <input type="checkbox" class="form-check-input" id="remember">
                                             <label class="form-check-label ml-2" for="remember" style="color: grey; font-size: small;">Ingat Saya</label>
@@ -72,9 +96,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group my-4">
-                                    <a href="home.html" class="btn btn-primary form-control">Masuk</a>
-                                </div>
-                                <p class="text-center" style="color: grey; font-size: small;">Belum menjadi Anggota? <a href="register.html" target="__blank" style="color: black; font-size: small;"><b>Daftar</b></a></p>
+                                    <button type="submit" class="btn btn-primary form-control">Masuk</button>                         </div>
+                                <p class="text-center" style="color: grey; font-size: small;">Belum menjadi Anggota? <a href="{{ route('register') }}" style="color: black; font-size: small;"><b>Daftar</b></a></p>
                             </form>
 
                         </div>

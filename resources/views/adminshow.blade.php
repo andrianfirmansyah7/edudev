@@ -17,6 +17,7 @@
 @section('main')
     <div class="col-md-12 bg-white p-4">
         <a href="/add"><button class="btn btn-primary mb-3">Tambah Artikel</button></a>
+        <a href="/logout"><button class="btn btn-danger mb-3">Logout</button></a>
         <table class="table table-responsive table-bordered table-hover table-stripped">
             <thead>
                 <tr>
