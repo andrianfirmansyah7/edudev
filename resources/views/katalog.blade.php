@@ -13,7 +13,7 @@
     <header style="padding: 3%; background-color: rgb(9, 48, 133); color: white;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a id="navedu" class="navbar-brand" href="#"><b>EduDev</b></a>
+                 <a id="navedu" class="navbar-brand" href="index.html" style="font-size: 40px;"><b>EduDev</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>

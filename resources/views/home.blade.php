@@ -13,7 +13,7 @@
       <header style="padding: 3%; background-color: rgb(9, 48, 133); color: white;">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a id="navedu" class="navbar-brand" href="#"><b>EduDev</b></a>
+                <a id="navedu" class="navbar-brand" href="index.html" style="font-size: 40px;"><b>EduDev</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,109 +37,47 @@
             </div>
         </nav>
     </header>
-    <!-- <div id="content">
-        <h2>Katalog Kelas</h2>
-        <p class="content-description">Berikut adalah Kelas yang tersedia</p>
-    </div> -->
-    <div class="card-content">
+     <div class="card-content">
         <div class="image-content">
             <img src="img/laptop.png" alt="ini gambar">
         </div>
         <div class="text-content">
-            <h1><b>Coding dengan Asik dan Menyenangkan</b></h1>
-            <p>Platform yang menyediakan kursus online pilihan terbaik bagi Anda yang ingin mulai belajar membangun aplikasi sendiri berupa Web Apps ataupun Mobile Apps.</p>
+            <h1 style="color: rgb(9, 48, 133);"><b>Coding dengan Asik dan Menyenangkan</b></h1>
+            <p style="color: rgb(9, 48, 133);">Platform yang menyediakan kursus online pilihan terbaik bagi Anda yang ingin mulai belajar membangun aplikasi sendiri berupa Web Apps ataupun Mobile Apps.</p>
             <a href="register.html" class="btn btn-outline-success" target="_blank">Daftar Sekarang</a>
         </div>
     </div>
     <div id="content">
-        <h2>Mengapa Bergabung dengan EduDev?</h2>
+        <h2 style="color: rgb(9, 48, 133);"><b>Mengapa Bergabung dengan EduDev?</b></h2>
     </div>
-    <div class="d-flex justify-content-center">
-        <img src="img/alasan1.png" class="rounded float-md-start" alt="...">
-        <img src="img/alasan2.png" class="rounded float-md-none" alt="...">
-        <img src="img/alasan3.png" class="rounded float-md-end" alt="...">
+    <div class="card-content">
+        <div class="image-content">
+            <img src="img/gambar1.png" alt="ini gambar" style="width: 130%;">
+        </div>
+        <div class="text">
+            <div>
+              <p style="color: rgb(9, 48, 133); width: 100%;"><img src="img/1alasan.png" alt=""> Materi mudah dipahami </p>
+              
+            </div>
+            <div>
+              <p style="color: rgb(9, 48, 133); width: 100%;"><img src="img/2alasan.png" alt=""> Mendapatkan Sertifikat </p>
+              
+            </div>
+            <div>
+              <p style="color: rgb(9, 48, 133); width: 100%;"><img src="img/3alasan.png" alt=""> Mengembangkan Hardskill dalam bidang pemrograman</p>
+              
+            </div>
+        </div>
     </div>
-    <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/alasan1.png" class="card-img-top" alt="...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/alasan2.png" class="card-img-top" alt="...">
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/alasan3.png" class="card-img-top" alt="...">
-          </div>
-        </div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col-sm-12">
-            <div class="card-group">
-              <div class="card">
-                <img src="img/buku.png" class="card-img-top" alt="gambar">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                      This card has supporting text below as a natural lead-in to additional content.
-                  </p>
-                </div>
-                <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
-              </div>
-              <div class="card">
-                <img src="img/sertif.png" class="card-img-top" alt="gambar">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                      This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-                  </p>
-                </div>
-                <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
-              </div>
-              <div class="card">
-                <img src="img/lampu.png" class="card-img-top" alt="gambar">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                      This card has supporting text below as a natural lead-in to additional content.
-                  </p>
-                </div>
-                <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
-              </div>
-        </div>
-    </div> -->
-    <!-- <div class="row mt-3">
-        <div class="card" style="width: 18rem;">
-            <img src="img/buku.png" class="card-img-top" alt="ini gambar">
-            <div class="card-body">
-              <h5 class="card-title">Materi Mudah dipahami dan sehingga belajar menjadi menyenangkan</h5>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="img/sertif.png" class="card-img-top" alt="ini gambar">
-            <div class="card-body">
-              <h5 class="card-title">Mendapatkan sertifikat</h5>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="img/lampu.png" class="card-img-top" alt="ini gambar">
-            <div class="card-body">
-              <h5 class="card-title">Mengembangkan hard skill dalam bidang pemrograman</h5>
-            </div>
-        </div>
-    </div> -->
     <div id="content">
-        <h2>Belajar Apa Saja?</h2>
+        <h2 style="color: rgb(9, 48, 133);"><b>Belajar Apa Saja?</b></h2>
     </div>
     <div class="d-flex justify-content-center">
         <div class="card">
             <div class="row m-3">
                 <img src="img/html.png" class="rounded float-start mr-3" alt="...">
                 <img src="img/css.png" class="rounded float mr-3" alt="...">
-                <img src="img/js.png" class="rounded float-end" alt="...">
+                <img src="img/js.png" class="rounded float-end ml-4" alt="...">
             </div>
             <div class="row m-3">
                 <img src="img/py.png" class="rounded float-start" alt="...">
@@ -149,104 +87,8 @@
         </div>
         
     </div>
-    <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/html.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/css.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/js.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/py.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-              <img src="img/java.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/sql.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="card-content">
-        <div class="image-content">
-            <img src="images/cssjpeg.jpg" alt="ini gambar">
-        </div>
-        <div class="text-content">
-            <h3>Kelas CSS Dasar</h3>
-            <p>Website yang baik akan memberikan kesan User-Experince yang hebat untuk pengguna. Jika pengguna yang menggunakan website kita sudah nyaman maka akan memberikan keuntungan yang besar bagi kita. Membuat suatu website juga tidak bisa sembarangan tanpa didasari dari visi dan misi yang jelas. Dengan menggunakan Cascade Style Sheet kini kita dapat mempercantik website kita agar lebih eye-catching. Tujuan utamanya adalah agar pengguna kita lebih nyaman lagi ketika menggunakan website kita. Warna dan jenis tipografi akan menentukan masing-masing dari tujuan website tersebut dibuat. Sebagai web designer maka kita wajib mempelajari CSS dalam tujuan mempercantik website dan memberikan efek animasi agar lebih terlihat interactive di mata pengguna.</p>
-            <a href="https://www.buildwithangga.com/kelas/css-website-design" class="btn btn-primary-dark w-50" target="_blank">Lihat Kelas</a>
-        </div>
-    </div>
-    <div class="card-content">
-        <div class="image-content">
-            <img src="images/reactjspng.png" alt="ini gambar">
-        </div>
-        <div class="text-content">
-            <h3>Kelas React Javascript</h3>
-            <p>React JS adalah library JavaScript yang digunakan oleh web developer dalam membangun website yang lebih interactive, fast, dan responsive. Library ini sering digunakan untuk membuat Single Page Application (SPA). Di kelas gratis ini kita akan membangun toko online sederhana dengan menggunakan HTML, CSS, JavaScript (React JS). Tentunya kita akan mempelajari dasar dari penggunaan library ini pada website kita seperti Components, Props, Events, Conditional, dan masih banyak lainnya.</p>
-            <a href="https://www.buildwithangga.com/kelas/react-javascript" class="btn btn-primary-dark w-50" target="_blank">Lihat Kelas</a>
-        </div>
-    </div>
-    <div class="card-content">
-        <div class="image-content">
-            <img src="images/ssBWAFWD.png" alt="ini gambar">
-        </div>
-        <div class="text-content">
-            <h3>Kelas Full-Stack Web Developer</h3>
-            <p>Di kelas Full-Stack Web Developer kita akan mempelajari UX design, UI design, Website Development dengan Bootstrap dan Laravel Jika saat ini kamu sedang bingung untuk fokus kepada karir apa maka kelas ini cocok sekali karena kamu akan mempelajari banyak bidang.</p>
-            <a href="https://www.buildwithangga.com/kelas/full-stack-web-developer" class="btn btn-primary-dark w-50" target="_blank">Lihat Kelas</a>
-        </div>
-    </div>
-    <div class="card-content">
-        <div class="image-content">
-            <img src="images/ssBWAFAD.png" alt="ini gambar">
-        </div>
-        <div class="text-content">
-            <h3>Kelas Full-Stack Android Developer</h3>
-            <p>Kelas ini akan membawa kalian untuk mempelajari materi terkait UX design dan juga Android development dalam membangun suatu aplikasi Android pemesenan tiket nonton secara online (seperti aplikasi TIX ID atau CGV). Saat ini banyak sekali perusahaan IT yang membutuhkan seorang Android developer untuk membangun aplikasi mereka. Tapi bukan hanya itu saja, tanpa adanya UX designer maka aplikasi yang akan dibangun dikhawatirkan tidak memiliki design-experience yang baik.</p>
-            <a href="https://www.buildwithangga.com/kelas/full-stack-android-developer" class="btn btn-primary-dark w-50" target="_blank">Lihat Kelas</a>
-        </div>
-    </div> -->
     <div id="content">
-        <h2>Apa Kata Mereka?</h2>
+        <h2 style="color: rgb(9, 48, 133);"><b>Apa Kata Mereka?</b></h2>
     </div>
     <div class="d-flex justify-content-center">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -258,7 +100,7 @@
                 <img src="img/katamereka2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="img/katamereka2.png" class="d-block w-100" alt="...">
+                <img src="img/katamereka3.png" class="d-block w-100" alt="...">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
